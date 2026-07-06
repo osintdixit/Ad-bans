@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    background: #1a1a1a;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #00ffff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+header p {
+    color: #888;
+    font-size: 1.2rem;
+}
+
+main {
+    display: flex;
+    gap: 30px;
+}
+
+section {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+section h2 {
+    color: #ff5555;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    background: #333;
+    border: 1px solid #444;
+    padding: 12px;
+    color: #fff;
+    border-radius: 4px;
+}
+
+button {
+    background: #ff5555;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff7777;
+}
+
+.accounts-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.accounts-list li {
+    background: #333;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accounts-list li button {
+    background: #aa0000;
+    padding: 5px 10px;
+}
+
+.progress-container {
+    margin-top: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat {
+    background: #333;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    flex: 1;
+}
+
+.stat span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.successful {
+    border-top: 3px solid #00ff00;
+}
+
+.failed {
+    border-top: 3px solid #ff0000;
+}
+
+.alive {
+    border-top: 3px solid #ffff00;
+}
+
+.progress-bar {
+    height: 30px;
+    background: #333;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#progressFill {
+    height: 100%;
+    background: linear-gradient(90deg, #00ffff, #ff5555);
+    border-radius: 15px;
+    transition: width 0.5s;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 1px solid #444;
+    color: #666;
+}
+
+
