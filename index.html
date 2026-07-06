@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AD BANS - Advanced Reporting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AD BANS</h1>
+            <p>Advanced Account Reporting System</p>
+        </header>
+
+        <main>
+            <section class="account-management">
+                <h2>Account Manager</h2>
+                <div class="input-group">
+                    <input type="text" id="newAccount" placeholder="Instagram Username">
+                    <button onclick="addAccount()">Add Account</button>
+                </div>
+                <div class="accounts-list">
+                    <h3>Active Reporting Accounts:</h3>
+                    <ul id="accountsList"></ul>
+                </div>
+            </section>
+
+            <section class="reporting-system">
+                <h2>Reporting System</h2>
+                <div class="input-group">
+                    <input type="text" id="targetAccount" placeholder="Target Account Username">
+                    <button onclick="startReporting()">Initiate Reporting</button>
+                </div>
+                <div class="progress-container">
+                    <h3>Reporting Progress</h3>
+                    <div class="stats">
+                        <div class="stat successful">
+                            <span id="successCount">0</span>
+                            <p>Successful Reports</p>
+                        </div>
+                        <div class="stat failed">
+                            <span id="failedCount">0</span>
+                            <p>Failed Attempts</p>
+                        </div>
+                        <div class="stat alive">
+                            <span id="aliveStatus">UNKNOWN</span>
+                            <p>Account Status</p>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progressFill" style="width: 0%"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>AD BANS v1.0 | Advanced Reporting System</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
